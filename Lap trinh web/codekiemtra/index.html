@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body onload="document.form1.text1.focus()">
+    <div class="loginbox radius">
+        <h2 style="color: #141823; text-align: center">Welcome to Facebook</h2>
+        <div class="loginboxinner radius">
+            <div class="loginheader">
+                <h4 class="title">Connect with friends and the world around you.</h4>
+            </div>
+
+            <div class="loginform">
+                <form name="form1" id="login" action="" method="post">
+                    <p>
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" value="" class="radius mini" />
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" value="" class="radius mini" />
+                    </p>
+                    <p>
+                        <input type="text" id="email" name="email" placeholder="Your Email" value="" class="radius width-email" />
+                    </p>
+                    <p>
+                        <input type="password" id="password" name="password1" placeholder="New Password" class="radius width-email" />
+                    </p>
+                    <p>
+                        <input type="password" id="password" name="password2" placeholder="Re-enter Password" class="radius width-email" />
+                    </p>
+                    <div class="btn" name="signup" onclick="ValidateEmail(document.form1.email)">
+                        <div class="btn-text">Sign Up for Facebook</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src=" index.js "></script>
+</body>
+
+</html>

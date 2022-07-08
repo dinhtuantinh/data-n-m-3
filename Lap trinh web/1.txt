@@ -1,0 +1,7 @@
+Tĩnh(3.5)
+Động(4->)
+đẹp(0.5)
+MVC(2)
+https(1)
+exception(1)
+API(1.5)

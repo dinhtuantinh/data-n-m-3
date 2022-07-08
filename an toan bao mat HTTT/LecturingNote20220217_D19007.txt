@@ -1,0 +1,101 @@
+Môn học: An toàn bảo mật Hệ thống thông tin
+=> tổng thể 5 chương 
+
+Chương 1: Tổng quan ATTT và ATBM HTTT
+Chương 2: Các kỹ thuật tấn công
+Chương 3: Mật mã học
+Chương 4: Các công nghệ bảo mật, phân quyền
+Chương 5: Quản lý và pháp luật ATTT
+
+==================================================================
+
+Đảm bảo an ninh an toàn cho TÀI SẢN quý giá trong thời đại số =>
+ THÔNG TIN và HỆ THỐNG THÔNG TIN (hệ thống nhập, xử lý, lưu trữ, truyền dẫn...)
+
+- Bối cảnh vạn vật kết nối => chúng ta phụ thuộc vào sự vận hành của các HTTT
+trong bối cảnh này chúng ta cũng đối mặt với nhiều nguy cơ mất AN TOÀN THÔNG TIN
+theo nghĩa:
+- Thông tin bị đánh cắp, bị lộ mật, bị phá hỏng, bị sửa đổi
+- Các hệ thống thông tin thì bị xâm nhập, làm ngưng trệ => ảnh hưởng xấu
+
+===================================================================
+
+Để làm tốt được công tác đảm bảo ATBM cho hệ thông thông tin thì ta cần nắm rõ:
+
+1. Nắm rõ bối cảnh, cấu trúc, cơ chế hoạt động của hệ thống thông tin 
+      - Con người, quy trình, dữ liệu, máy móc thiết bị....
+2. Nắm rõ được các nguy cơ đe dọa mất an toàn thông tin (loại trộm) 
+3. Nắm rõ được lỗ hổng, sơ hở của hệ thống thông tin (đầu vào, xử lý, lưu trữ, đầu ra, truyền dẫn...)
+4. Nắm được các hình thức TẤN CÔNG vào HTTT (mối đe dọa lợi dụng lỗ hổng => xâm hại tài sản thông tin)
+5. Nắm được các công nghệ, kỹ thuật bảo vệ: kỹ thuật mã thông tin, công nghệ: các thiết bị kiểm soát truy cập, phát hiện phòng ngừa các xâm nhập hệ thống
+6. Làm việc một cách bài bản có phương pháp
+        => các tiêu chuẩn và quy trình về QUẢN LÝ AN TOÀN THÔNG TIN : hợp chuẩn
+
+====================================================================
+
+=> TRỞ THÀNH CHUYÊN GIA BẢO MẬT AN TOÀN CHO HỆ THỐNG THÔNG TIN: 
+
+ - Info Security Engineer
+ - Info Security Manager
+
+=> mang lại sự ổn định an toàn cho các HTTT và THÔNG TIN vốn là xương sống hoạt động
+của các tổ chức từ chính phủ, doanh nghiệp... => công việc trên VietnamWorks với thu nhập $500-$2000 
+
+
+ ===================================================================
+Với cách tiếp cận đó, nghiên cứu về các loại HTTT và các mảng công việc của ATTT
+Computer & Data Security
+Network Security
+Security Management & Policy
+
+-----------------------------------------
+Nghiên cứu cấu trúc hệ thống thông tin mổ xẻ theo chiều "dọc"
+Hardware
+Software
+Database
+Network
+Mổ xẻ theo chiều "ngang"
+EIS
+DSS
+MIS
+TPS
+----------------------------------------
+
+Cách tiếp cận chung để đảm bảo an toàn bảo mật là:
+
+CHIA ĐỂ TRỊ => PHÒNG THỦ ĐẢM BẢO AN TOÀN theo nhiều LỚP
+Chia hệ thống thông tin thành các VÙNG (7 vùng) để đánh giá:
+- Nguy cơ, mối đe dọa mất an toàn thông tin
+- Các sơ hở, lỗ hổng có thể có
+- Cơ chế TẤN CÔNG = mối đe dọa + lỗ hổng 
+- Xác định các cơ chế bảo vệ phù hợp
+
+===========================================
+Khi bảo vệ cho một tài sản thông tin thì cần đảm bảo ĐỒNG THỜI ba thuộc tính CIA
+C: Confidentiality = Tính bí mật
+I: Integrity       = Toàn vẹn
+A: Availability    = Sẵn dùng
+
+Nghĩa là phải đảm bảo đồng thời thông tin và HTTT không bị lộ cho người không liên quan, không bị sứt mẻ, mất hỏng, luôn luôn có thể dùng được khi cần
+
+Để thực hiện việc này thì cần:
+- Thống kê các tài sản thông tin trong phạm vi cần bảo vệ
+- Đánh giá rủi ro bằng cách đặt các câu hỏi:
+         + Lộ thì sao?  => thì CHẾT: phải bảo vệ kỹ lưỡng, thì THÔI: bảo vệ sơ
+         + Sai thì sao? Mất thì sao?
+         + Không dùng được thì sao? Ngưng thì sao?                                   - Khi bảo vệ sẽ áp dụng các cơ chế đảm bảo an toàn:
+        - Security Control => RISK                                
+============================
+Chiến thắng sau cuối của người làm An toàn bảo mậtthoong tin và hệ thống thông tin :
+Thông tin thì được bảo đảm bí mật + toàn vẹn + sẵn sàng
+Hệ thống thông tin thì vận hành liên tục, thông suốt và hiệu quả với chi phí hợp lý
+
+=> Hã để hệ thông của anh cho tôi đảm bảo an toàn. Tôi thề sẽ đảm bảo an toàn tuyệt đối 100% không bao giờ mất, không bao h lộ, không bao giờ dùng ...
+
+Sự An toàn tuyệt đối 100% là bất khả thi(bằng chứ là cả các chính phủ, tập đoàn lớn cũng vẫn bị tấn công lộ lọt dữ liệu, mất an toàn và vân vân...)
+
+Ta không thể đảm bảo an toàn tuyệt đối, nhưng có thể cố gắng hết sức, làm việc kín kẽ, hết nhẽ...==> Hoàn thành nhiệm vụ=> nâng cao mức độ an toàn của hệ thống và phạm vi cần bảo vệ
+
+Làm sao để kín kẽ, làm sao để hết nhẽ???
+Kín kẽ = rà quét mọi ngóc ngách
+Hết nhẽ = học và tha, khảo tất cả những kinh nghiệm, kiến thức có thể có để thực hiện công việ, thực hiện an toàn bảo mật

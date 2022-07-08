@@ -1,0 +1,127 @@
+1.  Thế nào là corrective maintenace?
+-Corrective maintenace(Bảo trì khắc phục):  lac các hoạt động khắc phục sự cố 
+khi một thiết bị máy móc không thực hiện đúng chức năng của nó, khắc phục khi
+một bộ phận máy móc bị hư hỏng, khi vấn đề được phát hiện. Các lỗi này có thể
+do thiết kế, lỗi logic hơcsj lỗi coding sản phẩm. Bên cạnh đó, các lỗi cũng
+có thể do quá trình sử lý dữ liệu, hoặc hoạt động của hệ thống.
+-Lợi ích của việc corrective maintenance:
++Chi phí bảo trì thấp
++Quy trình đơn giản
++Ít khi cần đến việc lên kế hoạch
+
+2. Thế nào là adaptive maintenance?
+-Adaptive maintenance(bảo trì thích nghi): là tiến hóa hệ thống, chỉnh sủa phần
+mềm nhằm phù hợp vơui môi trường đã thay đổi của sản phẩm.
+-Adaptive maintenance được sử dụng với mục đích:
++Cạnh tranh
++Nhu cầu nội bộ
+
+3. Thế nào là perfective maintenance?
+-Perfective maintenance(bảo trì hoàn chỉnh): là bảo trì phần mềm sau khi giao 
+hàng được thực hiện để cải thiện chức năng và hiệu suất của chương trình hoặc 
+tăng khả năng bảo trì. Việc hành động này giúp phát hiện và sửa các lỗi tiềm ẩn
+trong sản phẩm phần mềm trước khi chúng được biểu hiện dưới dạng lỗi.
+
+4. Thế nào là refactoring?
+-Refactoring là định nghĩa về cả tiến và làm tốt hơn chất lượng của một mã nguồn 
+trong một ứng dụng. Nó không làm thay đổi các chức năng chính, chắc năng chung 
+của ứng dụng ,nhưng nó làm ứng dụng dễ bảo trì hơn, dễ phát triển trong tương lai.
+
+5. Thế nào là "from scratch"
+-From scratch là xây dựng phần mềm từ đầu(làm mới hoàn toàn) mà không dựa trên một 
+cơ sở hay một phần mềm có sẵn.
+
+6. Thế nào là moving target problem?
+Moving target problem là một sự thay đổi yêu cầu khi sản phẩm phầm mềm đnag được phát
+triển, được sửa dụng khi người dùng(clinet) thay đổi yêu cầu về chức năng phần mềm sau 
+khi yêu cầu chức năng cũ đã được thêm vào phần mềm.
+
+7. Thế nào là regession fault?
+Regession fault(lỗi hồi quy) là một loại lloix phần mềm trong đó một tính năng đã hoạt 
+động trước khi ngừng hoạt động. Lỗi này có thể xảy ra sau khi các thay đổi được áp dụng 
+cho sourcecode của phần mềm, bao gồm cả việc bổ sung các tính năng mới và sửa lỗi.
+
+8. Thế nào là một episode?
+Episode là lần lặp các pha.
+Ví dụ minh họa: khi thực hiện xong việc phân tích với các cài đặt chương trình, ta phát 
+hiện ra bản chất thiết kế không chính xác haowcj có lỗi thì ta phải thiết kế lại và cài 
+đặt lại thì đó chính => là một pha lặp lại(episode). Và phần mềm sẽ được làm xong và giao 
+tới khách hàng sau nhiều pha lặp lại.
+
+9. Thế nào là một iteration?
+Iteration(sự lặp đi lặp lại) là một cách tiếp cận phát triển phần mềm, tách quá trình phát 
+triển một ứng dụng lớn thành các phần nhỏ hơn. Mỗi phần, được gọi là "lặp lại", đại diện 
+cho toàn bộ quá trình phát triển và chứa các bước lập kế hoạch, thiết kế, phát triển và thử 
+nghiệm.
+
+10. Thế nào là một increasement?
+Increasement(sự gia tăng) là phương pháp phát triển phần mềm trong đó sản phẩm được thiết 
+kế, triển khai và thử nghiệm từng bước(mỗi lần thêm một ít) cho đến khi sản phẩm hoàn 
+thành. Nó liên quan đwns cả phát triển và bảo trì.
+
+11. Thế nào là một artifact?
+Artifact(đồ tạo tác) là một trong nhiều loại sản phẩm hhữ hình được tạo ra trong quá trình
+phát triển phần mềm. Mottj số artifact(ví dụ như: use case, sơ đồ lớp, các mô hình UML khác,
+yêu cầu cac tài liệu thiết kế) sẽ giúp mô tả chức năng, kiến trúc và thiết kế cho phần mềm. 
+Mỗi artifact khác nau thì liên quan quy trình phát triển riêng của nó- ví dụ như kế hoạch
+dự án , các business case và đánh giá rủi ro.
+
+12. Thế nào là portability?
+Portability (tính khả chuyền) của phần mềm là mức độ dễ dàng trong việc chỉnh sửa toàn bộ phần 
+mềm có thể chạy được trên một hệ thống, môi trường, phần cứng khác mà không phải lâp trình lạitừ đầu.
+
+13. Thế nào là reusebility?
+Reusebility (tính dừng lại) của phần mềm là quá trình phát triển phần mềm từ các thành phần phần 
+mềm hiện có, thay vì phát triển toàn bộ phần mềm từ đầu.
+
+14. Thế nào là milestone? 
+Milestone(cột mốc trong dự án) là một công cụ quản lý được sử dụng đẻ xác định một cột mốc trong 
+lịch trình dự án. Những mốc này có thể ghi nhận sự bắt đầu và kết trúc của một dự án, và đánh 
+dấu sự hoàn thành của một giai đoạn công việc chính.
+
+15. Thế nào là một story?
+User Story (câu chuyện người dùng) là một mô tả không chính thức bằng ngôn ngữ tự nhiên về một
+hoặc nhiều tính năng của hệ thống phần mềm. User story mô tả kiểu người dùng, họ muốn gì và tại sao
+User story giúp tạo ra mô tả đơn giản về một yêu cầu.
+
+17. Thế nào là concept exploration?
+Concept exploration(pha yueeu cầu) là pha đầu tiên trong quá trình xây dựng phần mềm, khi đó người 
+phát triển và khách hàng ngồi lại với nhau, Khác hàng nêu ra những yêu cầu mà phần mềm cần có
+còn những người phát triền thì chép lại. Khái niệm xác định dự án có triển vọng và tính
+khả thi để phát triển.
+
+18. Thế nào là business model?
+Business model(mô hình kinh doanh): là mô hình diễn tả kế hoạch nhằm phân phối sản phẩm của bạn tới
+tay khách hàng. Đó là lời giải thích tổng quát về những giá trị mà bạn cung cấp cho khách hàng của 
+mình với chi phí phù hợp để doanh nghiệm của mình có thể kiếm tiền.
+-Những cách để phân phoois sản phẩm phần mềm cho khách hàng:
++Tạo ra sản phẩm cài đặt toàn bộ ngày trên máy tính khách hàng 
++Tạo ra sản phẩm trên clound dựa vào việc luuw trữ máy chủ trên đám mây(còn được gọi là SaaS-Software 
+as a service)
++Kết hợp cả hai phương án trên
+
+19. Thế nào là traceability?
+Traceability là khả năng theo dõi và truy vết công việc trong suốt thời gian vòng đời của ứng dụng
+Nó thường được sử dụng để theo dõi quá trình phát triển phần mềm và những thứ đã xảy ra trong từng 
+giai đoạn, tất cả mọi thứ đều phải được kiểm thử.
+
+20. Thế nào là egoless programming?
+Egoless programmming(lập trình tập thể) là một phong cách lập trình máy tính trong đó các yếu tố cá 
+nhân được giảm thiểu đẻ chất lượng có thể được cải thiện.
+
+21. Thế nào là PM?
+PM (hay Product Manager) là người chịu trách nhiệm sản phẩm, giám sát và định hướng việc phát triển 
+một sản phẩm(product) nào đó, ví dụ như là một tính năng cho một app. Những quyết định product 
+manager thường được thực hiện thông qua việc phân tích dữ liệu để tìm ra vấn đề của sản phẩm, từ
+đó tối ưu hóa trải nghiệm người dùng đối với sản phẩm.
+
+22. Thế nào là technical leader?
+Technical leader là người đảm nhiệm việc quản lý và phân phối các dự án kỹ thuật thường là trong 
+bối cảnh của phần mềm máy tính. Họ quản lý các nhóm Developer và làm việc chặt chẽ với các nhà
+quản lý cấp cao để đảm bảo các dự án được giao đúng hạn và trong phạm vi ngân sách.
+
+23. Thế nào là Programming secrectary?
+Programming secretary(Thư ký lập trình) là người phụ trách việc hỗ trợ ghi chép, sắp xếp và thông báo
+các công việc, đề xuất, tin tức cho giám đốc doanh nghiệp.
+
+24. Thế nào là backup programmer?

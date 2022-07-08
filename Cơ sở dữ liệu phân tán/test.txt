@@ -1,0 +1,67 @@
+- test lại link
+- hiểu hết bản chất của các trigger(thêm đúng)
+- trasac (đặt trước dữ liệu)
+21h:45 bắt đầu
+1. Test link
+- link đến 1 máy bất kỳ(select)=>bảng phân mảnh ở trạm
+select => đủ 8 link(thực hiện 8 lần)
+(vd : select * from LINK10.BAN_VE.dbo.Nhan_vien )
+
+
+=> dùng cho bảng phân mảnh(Ga_Tàu,Chuyến Tàu, Nhân viên,vé)
+- ko cần cho bảng nhân bản(nhân bản toàn phần tại các trạm)
+ + Khách hàng, tàu hỏa(Nhân_bản)
+
+
+2. trigger
+- khách hàng mã phải tăng dần(KH099) => KH100(đủ 3 số đăng sau)
++ long thêm KH100, đang trong quá trình cập nhật lên máy chủ 
+để truyền cho các máy khác, kiên nhập khách hàng KH100
+rào cản ko cần thiết
++ riêng bảng khách hàng cô cho 1 đưa test thì ok
++ cho từu 2 đứa test 1 lúc sẽ dễ xảy ra lỗi(nên tất cả các máy 
+xóa cái trigger này đi)
+- Trigger thứ 2 trigger của tỉnh
+quy tắc đặt tên NV (NV + Ga + .....)
+dương đứng ở máy dương thêm 1 NHân viên ở trạm Tỉnh(NV19)
+khi đó long đúng ở máy nó thêm 1 nhân viên ở trạm tỉnh (NV19)
+Quy tắc thêm NV + Ga + Trạm của mình + số bất kỳ(3 số ở cuối)
+Long(GA02 -TRạm2) thêm nhân viên vào tỉnh(GA01)
+NV120
+-Trigger khi sửa học thêm chuyến tàu thì điểm xuất phát và kết thúc phải khác nhau
+
+3.transac
+khi thêm thuộc tính bảng(bỏ rowguid)
+use BAN_VE
+GO
+set xact_abort on;
+begin distributed transaction;
+   insert into LINK70.BAN_VE.dbo.Nhan_vien(Ma,Ten,Diachi,SDT,Vitri,MaGa,Bacluong) values('NV302','hung','ha noi','024299','nhan vien','GA03','12912');
+commit transaction;
+	select * from LINK70.BAN_VE.dbo.Nhan_vien
+go
+
+
+######procedure store
+
+create proc usp_TimTauHoa
+	@key nvarchar(255)
+as
+begin
+	select * from dbo.Tau_hoa where Hang like '%' + @key + '%'
+end
+exec usp_TimTauHoa 'ans'
+
+create procedure usp_NhapNhanVien
+	@ma varchar(50),
+	@ten nvarchar(50),
+	@diachi nvarchar(50),
+	@sdt varchar(50),
+	@vitri nvarchar(50),
+	@maga varchar(50),
+	@bacluong varchar(50)
+as
+begin
+	insert into LINK20.BAN_VE.dbo.Nhan_vien (Ma, Ten, Diachi, SDT, Vitri, MaGa, Bacluong) values (@ma, @ten, @diachi, @sdt, @vitri, @maga, @bacluong)
+end
+exec usp_NhapNhanVien 'NV429', N'Hồ Chí Minh', N'Nghệ An', '0917584192', N'Chủ tịch', 'GA04', '18831'

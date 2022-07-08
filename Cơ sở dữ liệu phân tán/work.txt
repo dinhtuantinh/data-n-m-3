@@ -1,0 +1,39 @@
+tôi lỡ tay xóa mấy cái phân mảnh, mn bật config chờ tôi tý
+2 phần :
+phân tán
+mỗi người tầm 2p là xong thôi
+dương or tỉnh rảnh hướng dẫn tuệ cài đặt lại nhé
+mn xóa hộ tôi cái database BAN_VE cũ đi
+đồng bộ hóa: máy chủ or trạm nhập dữ liệu => máy còn lại - xong
+KH40X,2,3,4
+linkserver : linkmaychu
+linkserver : giữa các máy trạm (nhân viên GA01,GA02 ĐỨNG Ở GA 1, SELECT,UPDATE,DELE GA2)
+
+code:
+long => nêu bài toán, sát =>
+sửa trưa T5
+
+các trigger nên được áp dụng
+trigger các trạm làm
+
+1. quy tắc đặt tên(thêm,sửa) của nhân viên(phải là NVAX) (3) TỈNH, DƯƠNG, LONG
+ với A là nhân viên tại ga nào
+ X là stt ga , có thể áp dụng cho GA, khách hàng,........
+ vd tại trạm GA01 thì có các nhân viên NV11,NV12,NV13,NV14
+
+2. - (thêm)kiểm tra khách hàng  đã tồn tại hay chưa tại trạm và máy chủ, để thêm (2) DŨNG, LỰC
+  vd NV14 đã tồn tại => nên không được phép thêm
+   - nhân viên đã tồn tại hay chưa tại trạm và máy chủ, để thêm
+  vd NV14 đã tồn tại => nên không được phép thêm
+s
+3. Kiểm tra vé của chuyến tàu đã hết hay chưa (2) KIÊN, TUỆ, DANH
+
+trigger tại máy chủ
+5.kiểm tra xóa,sửa từ bảng tàu hỏa, Nếu tàu hỏa đang
+có sử dụng trong chuyến tàu thì không được xóa hoặc sửa
+
+(7-9h) 
+
+giao dịch
+tham khảo bài lt(vé máy bay - giáo trình) (9=>)
+	

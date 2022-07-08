@@ -1,0 +1,11 @@
+cac cau link sever
++ Truy xuat thông tin bảng
+select * from LINK10.BAN_VE.dbo.Nhan_vien
++Truy xuất vé theo điểm xuất phát:
+select * from LINK10.BAN_VE.dbo.Chuyen_tau where Diemxuatphat = 'GA01'
++Thêm NV mới 
+SET XACT_ABORT ON;
+BEGIN DISTRIBUTED TRANSACTION
+	INSERT INTO LINK18.BAN_VE.dbo.Nhan_vien (Ma, Ten, Diachi, SDT, Vitri, MaGa, Bacluong) 
+	VALUES ('NV452', 'ABSGGS', 'SDFSD', '085349676', 'FSDGF', 'GA04', '5346889');
+COMMIT TRANSACTION

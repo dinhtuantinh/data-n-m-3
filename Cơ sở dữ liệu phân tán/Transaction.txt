@@ -1,0 +1,49 @@
+use BAN_VE
+go
+set xact_abort on;
+begin distributed transaction;
+	insert into LINK42.BAN_VE.DBO.Nhan_vien() values();
+	delete from LINK42.BAN_VE.DBO.Nhan_vien() where ;
+	update LINK42.BAN_VE.DBO.Nhan_vien() set where ;
+commit transaction;
+go
+select * from LINK42.BAN_VE.DBO.Nhan_vien
+select * from BAN_VE.DBO.Khach_hang
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+use BAN_VE
+go
+set xact_abort on;
+begin distributed transaction;
+	--insert into LINK42.BAN_VE.DBO.Ve_tau(Ma,Makhachhang,Machuyentau,Giave,Uudai) values('VE0073','KH99', 'CT07', '400000', '0');
+	delete from LINK42.BAN_VE.DBO.Tau_hoa where Ma='TH12';
+	--update LINK42.BAN_VE.DBO.Nhan_vien set Ten='Nguyen Trong C', Diachi='Dubai' where Ma='NV240';
+commit transaction;
+go
+select * from LINK42.BAN_VE.DBO.Tau_hoa
+select * from BAN_VE.DBO.Khach_hang
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+create proc usp_TimTauHoa
+	@key nvarchar(255)
+as
+begin
+	select * from dbo.Tau_hoa where Hang like '%' + @key + '%'
+end
+exec usp_TimTauHoa 'ans'
+
+create procedure usp_NhapNhanVien
+	@ma varchar(50),
+	@ten nvarchar(50),
+	@diachi nvarchar(50),
+	@sdt varchar(50),
+	@vitri nvarchar(50),
+	@maga varchar(50),
+	@bacluong varchar(50)
+as
+begin
+	insert into LINK20.BAN_VE.dbo.Nhan_vien (Ma, Ten, Diachi, SDT, Vitri, MaGa, Bacluong) values (@ma, @ten, @diachi, @sdt, @vitri, @maga, @bacluong)
+end
+exec usp_NhapNhanVien 'NV429', N'Hồ Chí Minh', N'Nghệ An', '0917584192', N'Chủ tịch', 'GA04', '18831'

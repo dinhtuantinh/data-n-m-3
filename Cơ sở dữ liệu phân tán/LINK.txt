@@ -1,0 +1,17 @@
+// kiểm tra khách hàng
+SELECT * from dbo.Khach_hang WHERE Ma = ''
+
+tài khoản HTKN(như trc) MK: 123
+tên link(tram - chủ) LINKA0(A: STT TRẠM)
+LINK GIỮA CÁC MÁY VỚI NHAU LINKAB(A: STT TRẠM B:STT TRẠM MÌNH KẾT NỐI ĐẾN)
+8 LINKSERVER 
+MK: 123
+HÙNG - MC - 10.241.63.238
+TỈNH - TRAM1 - 10.241.144.252
+LONG - 2 - 10.241.70.207
+LỰC - 3 - 10.241.29.241
+DƯƠNG - 4 - 10.241.199.56
+KIÊN - 5 - 10.241.222.40
+DANH - 6 - 10.241.46.33
+TUỆ - 7 - 10.241.253.86
+DŨNG - 8 - 10.241.127.74

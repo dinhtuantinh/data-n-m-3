@@ -1,0 +1,48 @@
+
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TRIGGER dbo.checkAdd
+   ON  dbo.Chuyen_tau 
+   AFTER INSERT
+AS 
+BEGIN
+
+	SET NOCOUNT ON;
+	
+END
+GO
+
+===============
+
+USE [BAN_VE]
+GO
+--Trigger [dbo].[Chuyen_tau]
+Set ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+	ALTER TRIGGER dbo.checkAdd
+		ON dbo.Chuyen_tau
+		AFTER INSERT, UPDATE
+	AS
+	declare @from varchar(50), @to int 
+	set @from = (select Diemxuatphat from inserted)
+	set @to = (select count(*) from inserted where Diemketthuc = @from)
+	if( @to < 1)
+	BEGIN 
+		Print('Successfully added')
+	END
+	else
+	BEGIN 
+	Rollback tran
+	Raiserror('Error insert chuyen tau, diem di va diem den trung nhau', 16,1)
+END
+
+==========
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+insert into dbo.Chuyen_tau values ('CT25','TH05','GA01','GA03','2022-08-05 06:00:00','C96DB18E-97CB-EC11-9FE4-DCFB48872980')

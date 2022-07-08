@@ -1,0 +1,24 @@
+LAN: Mạng cục bộ
+
+Các thiết bị mạng:
+
+Hub
+Switch
+Router
+
+LAN gồm:
+Workstation (PC, Mobile Device...) --- HUB-------SERVER
+				      SWITCH
+                                      ROUTER
+HUB: luôn cho gửi gói tin đến tất cả các cổng, máy nào thấy địa chỉ nhận không phải của mình thì tự bỏ qua
+SWITCH: hoạt động như tổng đài, sẽ căn cứ vào địa chỉ MAC đi và đến để truyền tin giữa 2 cổng cần gửi/nhận
+ROUTER: thiết bị định tuyến khi cần liên thông mạng với nhau
+Cấu trúc địa chỉ IP có 2 phần: NET_ID và HOST_ID
+			IP: 8+8+8+8 = 32 bit
+	
+Thuật toán mã hóa mật khẩu wifi
+WEP
+WPA
+WPA2
+DoS = Denial of Service: Từ chối dịch vụ = Làm dịch vụ bị ngưng bởi Quá Tải, Treao máy do xử lý dữ liệu độc, xử lý vòng quanh
+DDoS = Distributed Denial of Service: Tấn công từ chối dịch vụ phân tán (Có tổ chức/chỉ huy)		

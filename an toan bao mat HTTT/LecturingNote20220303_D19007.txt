@@ -1,0 +1,32 @@
+Chia vùng hệ thống CNTT:
+- Trong mỗi vùng
+	+ Xác định các mối đe dọa có thể gây hại CIA đối với các tài sản thông tin
+	+ Rà quét lỗ hổng/sơ hở trên các tài sản thông tin hiện có
+
+Trong vùng máy trạm:
+	+ Windows 10
+	+ Office 2016
+	+ WinRar
+	+ FoxitReader
+	+ FireFox / Cốc cốc
+	+ Windows Networking + Sharing Folders + Shared Printer
+Trong vùng máy chủ
+	Windows
+		Framework : .NET, Java, NodeJS, Docker, Kubernetess...
+		WebServer / Application Server: 
+		Database: MySQL, SQL Server, Oracle
+	Linux
+Khi người dùng truy cập vào hệ thống có 2 quá trình nối tiếp nhau: 
+1. Athentication : xác minh/xác thực xem người dùng có đúng là người hợp lệ được vào hệ thống hay không
+2. Authorization : phân quyền cho người dùng được sử dụng các tài nguyên/chức năng trong hệ thống
+
+Athen là xác thực, Author là phân quyền
+
+IDS: Intrution Detection System : hệ thống phát  hiện xâm nhập
+IPS: Intrution Prevention System : hệ thống phòng chống xâm nhập
+
+Intrution = Active Attack = Threat + Vulnerability
+
+
+
+
